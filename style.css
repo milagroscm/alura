@@ -1,76 +1,93 @@
-#banner{
-    width: 100%;
+header{
+    background-color: #bbbbbb; 
+    padding: 20px 0;
 }
+
 .caja{
     width: 940px;
     position: relative;
     margin:0 auto;
 }
+
 nav{
-    position:absolute;
-    top:10px;
-    right:0;
+    position: absolute;/*posicionamos el elemento en cualquier lugar de la pagina*/
+    top: 110px;
+    right: 0;
 }
-.navegador{
-    display:contents;
-}
+
 nav li{
-    display: inline;    /*1*/
-    margin: 0 0 0 15px;    
+    display: inline;
+    margin: 0 0 0 15px; /* margen hacia arriba , derecha , abajo , izquierda*/
 }
 
 nav a{
-    text-transform: uppercase; /*2*/
+    text-transform: uppercase; /*combierte el texto en mayuscula*/
     color: black;
-    font-weight:bold;
-    font-size: 22px;
+    font-weight: bold; /*texto en negrita*/
+    font-size: 22px; 
     text-decoration:none;
-    
 }
+
 nav a:hover{
-    color: darkorange;
-    text-decoration: underline;
+    color: #c78c19;
+    text-decoration:underline;
 }
 
-.principal{
-    background:#cccccc;
-    padding: 20px;
+.producto{
+    width: 940px;
+    margin:0 auto;
+    padding: 50px;
 }
 
-.titulo-principal {
-    padding-left: 30px;
 
-}
-
-.titulo-centralizado {
-    text-align: center;
-}
-
-p {
-    text-align: center;    
-}
-
-em strong {
-    color: red;
-}
-
-.diferenciales{
-    background: white;
-    padding: 30px;
-}
-
-.items {
-    font-style: italic;
-}
-#mision{
-    font-size: 20px;
-}
-ul{
+.producto li{
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right:20%;
+    margin: 0 1.5%;
+    padding: 30px 20px; /* vertical , horizontal (espaciado en los laterales)*/
+    box-sizing: border-box;/*usamos esta propiedad cuando el espacio de nuestro limite fue sobrepasado el tamaño*/
+    border: 4px solid #000000;
+    border-radius: 10px;
+
 }
-.imagenDiferenciales{
-    width:50%
+
+.producto li:hover{
+    border-color: #c78c19;
+
+}
+
+.producto li:active{
+    border-color:rgb(10, 203, 10);
+}
+
+.producto h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    background: url(img/imagenes/bg.jpg);
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
 }
